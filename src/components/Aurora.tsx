@@ -142,6 +142,7 @@ export default function Aurora({
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.canvas.style.backgroundColor = 'transparent';
 
+    // eslint-disable-next-line prefer-const
     let program: Program;
 
     function resize() {
@@ -150,6 +151,7 @@ export default function Aurora({
       const height = ctn.offsetHeight;
       renderer.setSize(width, height);
       if (program) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (program.uniforms as any).uResolution.value = [width, height];
       }
     }
@@ -181,10 +183,14 @@ export default function Aurora({
     const update = (t: number) => {
       animateId = requestAnimationFrame(update);
       const { speed: spd = 1.0 } = propsRef.current;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (program.uniforms as any).uTime.value = t * 0.001 * spd;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (program.uniforms as any).uAmplitude.value = propsRef.current.amplitude ?? 1.0;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (program.uniforms as any).uBlend.value = propsRef.current.blend ?? blend;
       const stops = propsRef.current.colorStops ?? colorStops;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (program.uniforms as any).uColorStops.value = stops.map((hex) => {
         const c = new Color(hex);
         return [c.r, c.g, c.b];
