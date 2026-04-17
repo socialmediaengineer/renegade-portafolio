@@ -172,7 +172,7 @@ export function HeroSection() {
                   <div className="w-6 h-6 rounded-full overflow-hidden">
                     <Image src="/profile.png" alt="Profile" width={24} height={24} className="w-full h-full object-cover" />
                   </div>
-                  <span className="text-white/80 text-xs font-medium tracking-widest uppercase">Mi Historia</span>
+                  <span className="text-white/80 text-xs font-medium tracking-widest uppercase">Edición Profesional</span>
                 </div>
               </div>
             </div>
