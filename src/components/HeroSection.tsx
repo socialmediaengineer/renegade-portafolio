@@ -5,6 +5,7 @@ import { Play, Mail, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
+import { VideoModal } from "./VideoModal";
 
 const Aurora = dynamic(() => import("./Aurora"), { ssr: false });
 
@@ -12,6 +13,7 @@ const words = ["profesionales", "virales", "únicos"];
 
 export function HeroSection() {
   const [index, setIndex] = useState(0);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -158,14 +160,13 @@ export function HeroSection() {
                 <Image src="/miniatura.png" alt="Mi Historia" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030608]/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <a
-                    href="https://www.youtube.com/watch?v=pFMTTRuz9nY"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    type="button"
+                    onClick={() => setActiveVideo("pFMTTRuz9nY")}
                     className="w-16 h-16 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/25 transition-all duration-300 border border-white/20 shadow-[0_0_30px_rgba(77,184,212,0.4)] hover:scale-110"
                   >
                     <Play size={26} className="text-white ml-1" fill="white" />
-                  </a>
+                  </button>
                 </div>
                 <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
                   <div className="w-6 h-6 rounded-full overflow-hidden">
@@ -190,6 +191,8 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
+
+      <VideoModal videoId={activeVideo} onClose={() => setActiveVideo(null)} />
     </section>
   );
 }

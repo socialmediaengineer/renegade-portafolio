@@ -3,7 +3,9 @@
 import Image from "next/image";
 import { Play } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { useScrollReveal, fadeUpVariants, staggerContainerVariants, cardVariants } from "./useScrollReveal";
+import { VideoModal } from "./VideoModal";
 
 const portfolioItems = [
   {
@@ -47,6 +49,7 @@ const portfolioItems = [
 export function PortfolioSection() {
   const header = useScrollReveal();
   const grid = useScrollReveal();
+  const [activeVideo, setActiveVideo] = useState<{ id: string; isShort: boolean } | null>(null);
 
   return (
     <section id="portfolio" className="py-24 px-4 sm:px-6 lg:px-8">
@@ -69,13 +72,11 @@ export function PortfolioSection() {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {portfolioItems.map((item) => (
-            <motion.a
+            <motion.div
               key={item.videoId}
               variants={cardVariants}
-              href={item.isShort ? `https://www.youtube.com/shorts/${item.videoId}` : `https://www.youtube.com/watch?v=${item.videoId}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.07] hover:border-[#4db8d4]/40 hover:shadow-[0_0_24px_rgba(77,184,212,0.12)] transition-all duration-500"
+              onClick={() => setActiveVideo({ id: item.videoId, isShort: item.isShort ?? false })}
+              className="group bg-white/[0.03] rounded-2xl overflow-hidden border border-white/[0.07] hover:border-[#4db8d4]/40 hover:shadow-[0_0_24px_rgba(77,184,212,0.12)] transition-all duration-500 cursor-pointer"
             >
               <div className={`relative overflow-hidden ${item.isShort ? "aspect-[9/16] max-h-[320px]" : "aspect-video"}`}>
                 <Image
@@ -100,10 +101,16 @@ export function PortfolioSection() {
                 <h3 className="text-white font-bold text-base mb-2">{item.title}</h3>
                 <p className="text-white/40 text-xs leading-relaxed">{item.description}</p>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </motion.div>
       </div>
+
+      <VideoModal
+        videoId={activeVideo?.id ?? null}
+        isShort={activeVideo?.isShort}
+        onClose={() => setActiveVideo(null)}
+      />
     </section>
   );
 }
