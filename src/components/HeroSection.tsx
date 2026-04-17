@@ -155,11 +155,11 @@ export function HeroSection() {
             <div className="absolute -inset-8 rounded-3xl bg-gradient-to-br from-[#1a6b8a]/30 to-[#4db8d4]/10 blur-3xl" />
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-[0_32px_80px_rgba(0,0,0,0.6)]">
               <div className="aspect-video relative">
-                <Image src="/miniatura.png" alt="Mi Historia" fill className="object-cover" />
+                <Image src="/ESLAQES.png" alt="Mi Historia" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030608]/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <a
-                    href="https://www.youtube.com/watch?v=bXBlNTWOLxs"
+                    href="https://www.youtube.com/watch?v=pFMTTRuz9nY"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-16 h-16 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/25 transition-all duration-300 border border-white/20 shadow-[0_0_30px_rgba(77,184,212,0.4)] hover:scale-110"
