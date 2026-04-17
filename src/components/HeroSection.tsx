@@ -155,7 +155,7 @@ export function HeroSection() {
             <div className="absolute -inset-8 rounded-3xl bg-gradient-to-br from-[#1a6b8a]/30 to-[#4db8d4]/10 blur-3xl" />
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-[0_32px_80px_rgba(0,0,0,0.6)]">
               <div className="aspect-video relative">
-                <Image src="https://ext.same-assets.com/310656553/1269622060.jpeg" alt="Mi Historia" fill className="object-cover" />
+                <Image src="/miniatura.png" alt="Mi Historia" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030608]/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <a
