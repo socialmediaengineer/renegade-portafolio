@@ -26,7 +26,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#4db8d4]/50 shadow-[0_0_15px_rgba(77,184,212,0.3)]">
               <Image
-                src="/eslaqes.png"
+                src="/ESLAQES.png"
                 alt="Renegade Logo"
                 width={40}
                 height={40}
