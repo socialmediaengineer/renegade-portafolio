@@ -9,7 +9,7 @@ export function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Image
-              src="/ESLAQES.png"
+              src="/apple-touch-icon.png"
               alt="Renegade Logo"
               width={32}
               height={32}
