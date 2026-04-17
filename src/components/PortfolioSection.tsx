@@ -15,6 +15,18 @@ const portfolioItems = [
     isShort: false,
   },
   {
+    title: "Motion Graphics",
+    description: "Animaciones dinámicas y efectos visuales para destacar tu contenido.",
+    videoId: "VYD4CfdFftw",
+    isShort: true,
+  },
+  {
+    title: "Vlog & Lifestyle",
+    description: "Edición de estilo de vida con un toque cinematográfico.",
+    videoId: "2NktUUwDdpc",
+    isShort: true,
+  },
+  {
     title: "Contenido Viral",
     description: "Estrategias de edición para maximizar el alcance y la retención.",
     videoId: "GMV_emdlgLI",
@@ -27,21 +39,9 @@ const portfolioItems = [
     isShort: true,
   },
   {
-    title: "Motion Graphics",
-    description: "Animaciones dinámicas y efectos visuales para destacar tu contenido.",
-    videoId: "VYD4CfdFftw",
-    isShort: true,
-  },
-  {
     title: "AI UGC Ads",
     description: "Anuncios UGC generados 100% con IA — tan realistas que parecen personas reales. 30 segundos que venden.",
     videoId: "M7xa0ttDDgk",
-    isShort: true,
-  },
-  {
-    title: "Vlog & Lifestyle",
-    description: "Edición de estilo de vida con un toque cinematográfico.",
-    videoId: "2NktUUwDdpc",
     isShort: true,
   },
 ];
