@@ -88,7 +88,7 @@ export function CTASection() {
 
           {/* WhatsApp button */}
           <a
-            href="https://wa.me/507TUNUMERO"
+            href="https://wa.me/50767518476"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 transition-all duration-300 hover:scale-[1.02]"
