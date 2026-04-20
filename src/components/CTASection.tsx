@@ -8,7 +8,7 @@ export function CTASection() {
   const { ref, controls } = useScrollReveal();
 
   return (
-    <section className="w-full py-16 bg-[#030608]">
+    <section id="contact" className="w-full py-16 bg-[#030608]">
       <div className="text-center mb-10">
         <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 inline-block relative">
           Trabajemos Juntos
