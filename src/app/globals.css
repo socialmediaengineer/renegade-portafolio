@@ -98,3 +98,13 @@ html {
 .ice-text-glow {
   text-shadow: 0 0 20px rgba(77, 184, 212, 0.5);
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
