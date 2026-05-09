@@ -27,10 +27,10 @@ const portfolioItems = [
     isShort: true,
   },
   {
-    title: "Contenido Viral",
-    description: "Estrategias de edición para maximizar el alcance y la retención.",
-    videoId: "GMV_emdlgLI",
-    isShort: true,
+    title: "Videos para SaaS",
+    description: "VSLs y demos editados para convertir — claridad, ritmo y motion al servicio de tu producto.",
+    videoId: "v5yvJBUaRvY",
+    isShort: false,
   },
   {
     title: "Edición Smooth para Viralidad",
