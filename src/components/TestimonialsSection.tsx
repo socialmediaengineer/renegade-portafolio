@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Script from "next/script";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollReveal, fadeUpVariants, staggerContainerVariants, cardVariants } from "./useScrollReveal";
@@ -15,6 +16,7 @@ const testimonials = [
 export function TestimonialsSection() {
   const header = useScrollReveal();
   const grid = useScrollReveal();
+  const reviews = useScrollReveal();
 
   return (
     <section id="testimonials" className="py-24 px-4 sm:px-6 lg:px-8">
@@ -70,6 +72,18 @@ export function TestimonialsSection() {
               )}
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Google Reviews widget */}
+        <motion.div
+          ref={reviews.ref}
+          initial="hidden"
+          animate={reviews.controls}
+          variants={fadeUpVariants}
+          className="mt-12"
+        >
+          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+          <div className="elfsight-app-2103c2e5-cb13-4e11-af39-b12a42b419bc" data-elfsight-app-lazy />
         </motion.div>
       </div>
     </section>
