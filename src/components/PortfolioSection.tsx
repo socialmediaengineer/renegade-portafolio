@@ -11,7 +11,7 @@ const portfolioItems = [
   {
     title: "VSL de Negocios",
     description: "Motion Graphics pensados para transmitir calidad, elegancia y transformar viewers en clientes.",
-    videoId: "v5yvJBUaRvY",
+    videoId: "OqHKptkm6CQ",
     isShort: false,
   },
   {
