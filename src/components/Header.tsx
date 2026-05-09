@@ -49,14 +49,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Language / EN page */}
-          <Link
-            href="/marketing"
-            className="hidden md:inline-flex text-xs font-bold px-3 py-1.5 rounded-full border border-white/20 text-white/60 hover:text-[#4db8d4] hover:border-[#4db8d4]/50 transition-all duration-200"
-          >
-            EN
-          </Link>
-
           {/* Mobile Menu Button */}
           <button
             type="button"
