@@ -162,7 +162,7 @@ export function HeroSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
                     type="button"
-                    onClick={() => setActiveVideo("pFMTTRuz9nY")}
+                    onClick={() => setActiveVideo("n3eMSjOi-8k")}
                     className="w-16 h-16 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/25 transition-all duration-300 border border-white/20 shadow-[0_0_30px_rgba(77,184,212,0.4)] hover:scale-110"
                   >
                     <Play size={26} className="text-white ml-1" fill="white" />
