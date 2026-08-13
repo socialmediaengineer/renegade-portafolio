@@ -47,6 +47,12 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/portal/login"
+              className="text-[#030608] bg-[#4db8d4] hover:bg-[#a8d8e8] text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-200"
+            >
+              Portal de Clientes
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -73,6 +79,13 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                href="/portal/login"
+                className="text-[#030608] bg-[#4db8d4] text-sm font-semibold px-4 py-2 rounded-full inline-block w-fit"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Portal de Clientes
+              </Link>
             </div>
           </nav>
         )}

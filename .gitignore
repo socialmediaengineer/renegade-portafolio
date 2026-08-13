@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# portal file uploads (local dev only, not persisted on serverless hosting)
+/tmp-uploads
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -1,6 +1,6 @@
 "use client";
 
-import { Monitor, Layers, Volume2, Sparkles } from "lucide-react";
+import { Monitor, Layers, Volume2, Palette } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollReveal, fadeUpVariants, staggerContainerVariants, cardVariants } from "./useScrollReveal";
 
@@ -21,9 +21,9 @@ const services = [
     description: "Mezcla multicanal, reducción de ruido, sincronización de audio, y masterización para diferentes plataformas.",
   },
   {
-    icon: Sparkles,
-    title: "Efectos Visuales Avanzados",
-    description: "Compositing con green screen, tracking 3D, partículas, simulaciones físicas y integración de elementos CGI.",
+    icon: Palette,
+    title: "Identidad de Marca",
+    description: "Diseño de logo, paleta de colores y guía de marca, papelería, y merch — camisetas, tazas y todo lo que representa tu marca en el día a día.",
   },
 ];
 
@@ -40,8 +40,8 @@ export function ServicesSection() {
             <span className="absolute -bottom-2 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#4db8d4] to-transparent rounded-full" />
           </h2>
           <p className="text-white/50 text-lg mt-6">
-            Soluciones creativas para tus necesidades de{" "}
-            <span className="text-[#a8d8e8] font-medium">edición de video</span>
+            Soluciones creativas para{" "}
+            <span className="text-[#a8d8e8] font-medium">video y la identidad de tu marca</span>
           </p>
         </motion.div>
 

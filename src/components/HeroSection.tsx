@@ -67,7 +67,7 @@ export function HeroSection() {
                 <Image src="/profile.png" alt="Profile" width={56} height={56} className="w-full h-full object-cover" />
               </div>
               <span className="bg-white/5 backdrop-blur-md px-5 py-2 rounded-full text-sm font-medium border border-white/10 text-white/90 tracking-wide">
-                Editor Profesional
+                Edición, Diseño & Creatividad de Marca
               </span>
             </motion.div>
 
@@ -119,7 +119,7 @@ export function HeroSection() {
             >
               Transformo tus ideas en{" "}
               <span className="text-[#a8d8e8] font-medium">experiencias visuales</span>{" "}
-              que conectan, inspiran y generan{" "}
+              — video, diseño gráfico y creatividad de marca — que conectan, inspiran y generan{" "}
               <span className="text-[#a8d8e8] font-medium">resultados reales</span>
             </motion.p>
 
